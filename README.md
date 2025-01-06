@@ -17,15 +17,11 @@ Two important notes about judging phase risk adjustments:
 
 As such, wardens are encouraged to select the appropriate risk level carefully during the submission phase.
 
-## 🐺 C4 team: paste this into the bottom of the sponsor's audit repo `README`, then delete this line
+# Overview
 
 The OPinit Stack is a versatile framework designed for CosmosSDK, facilitating the development of vm-agnostic Optimistic Rollups. 
 
 This framework aligns closely with the interface of Optimism's Bedrock, promoting a straightforward user experience. Leveraging the Initia L1 Governance model, it addresses fraud-proof disputes efficiently.
-
-# Overview
-
-[ ⭐️ SPONSORS: add info here ]
 
 ## Links
 
