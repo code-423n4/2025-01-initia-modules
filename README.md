@@ -1,4 +1,4 @@
-# Initia Modules audit details
+# Initia Rollup Modules audit details
 - Total Prize Pool: $60,000 in USDC
   - HM awards: $48,300 in USDC
   - QA awards: $2,000 in USDC
