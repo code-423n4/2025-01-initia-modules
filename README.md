@@ -55,9 +55,9 @@ This framework aligns closely with the interface of Optimism's Bedrock, promotin
 
 ## Main invariants
 
-1. Anyone can initiate L2 and create a bridge on L1
-2. Governance can update l2 bridge owner and challenger 
-3. Anyone can create gov proposal to challenge to change abnormal L2 operator or challenger with deposit (invalid proposal could lose deposit). 
+1. Anyone can initiate an L2 and create a bridge on L1.
+2. Governance has the authority to update the L2 bridge owner and challenger.
+3. Anyone can submit a governance proposal to challenge or change an abnormal L2 operator or challenger by providing a deposit. (Invalid proposals may result in the forfeiture of the deposit.)
 
 ## Attack ideas (where to focus for bugs)
 
@@ -69,30 +69,14 @@ Governance account (L1 validators)
 
 ## Running tests
 
+```bash
+# OPinit cosmos modules
 git clone https://github.com/initia-labs/OPinit
-cd OPinit
-make test
+(cd OPinit && make test)
 
+# OPinit bots
 git clone https://github.com/initia-labs/opinit-bots
-cd opinit-bots
-make test
-
-```bash
-git clone https://github.com/code-423n4/2023-08-arbitrum
-git submodule update --init --recursive
-cd governance
-foundryup
-make install
-make build
-make sc-election-test
-```
-To run code coverage
-```bash
-make coverage
-```
-To run gas benchmarks
-```bash
-make gas
+(cd opinit-bots && make test)
 ```
 
 ## Miscellaneous
