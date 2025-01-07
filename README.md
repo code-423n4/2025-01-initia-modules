@@ -43,7 +43,7 @@ This framework aligns closely with the interface of Optimism's Bedrock, promotin
 
 **OpInit Bots**
 - Source code location: https://github.com/initia-labs/opinit-bots
-- Source code version: [7da22a78f367cb25960ed9c536500c2754bd5d06](https://github.com/initia-labs/OPinit/commit/7da22a78f367cb25960ed9c536500c2754bd5d06)
+- Source code version: [640649b97cbfa5782925b7dc8c0b62b8fa5367f6](https://github.com/initia-labs/opinit-bots/commit/640649b97cbfa5782925b7dc8c0b62b8fa5367f6)
 - Files:
 	- challenger/**
 	- executor/**
