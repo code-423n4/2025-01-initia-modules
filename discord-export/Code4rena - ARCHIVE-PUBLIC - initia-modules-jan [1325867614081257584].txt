@@ -1,0 +1,409 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-PUBLIC / initia-modules-jan
+==============================================================
+
+[01/07/2025 14:13] itsmetechjay (pinned)
+👋 Hello and welcome to the** $60,000 in USDC Initia Rollup Modules** audit channel!
+
+📆 Audit opens Tuesday, 07 January 2025 20:00 (20:00 UTC) and runs through Tuesday, 21 January 2025 20:00 (20:00 UTC) (14 days).
+
+Please give a warm welcome to the Initia team, particularly @beer-1, @Leo.init, @ALPAC4, @Sawit, @hoon, and @Harvey who will be available for questions either here in the channel or via a PRIVATE thread. You can expect them to be available in GMT+7 and GMT+9 timezones.
+
+🤖 **Documentation bot assistance:** For general questions about the codebase, give our documentation bot a try, by tagging `@Docs Wolf` in any thread (private or public) and asking your question. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources.  *Docs Wolf will be available when the audit is live.*
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2025-01-initia-rollup-modules
+
+
+[01/07/2025 14:13] itsmetechjay
+Pinned a message.
+
+
+[01/07/2025 20:17] kann_p
+whats the nSLOC
+
+
+[01/07/2025 20:41] davidjohn241018
+hey where is source code?
+
+
+[01/07/2025 21:03] itsmetechjay
+It is linked out under the Scope section: https://github.com/code-423n4/2025-01-initia-modules?tab=readme-ov-file#scope
+
+
+[01/08/2025 02:15] gxh6709
+👍
+
+{Reactions}
+👍 (4) 
+
+[01/08/2025 15:10] 0xjarix
+Welcome @beer-1 , @Leo.init , @ALPAC4 , @Sawit , and @hoon
+Would you recommend starting to review the modules over the bots?
+
+
+[01/08/2025 15:12] tansawit
+Yes personally would review the module first at least briefly to get an idea of what the (the majority of) bots are meant to function with
+
+{Reactions}
+👌 👍 
+
+[01/09/2025 17:39] itsmetechjay
+ℹ️ Wardens, FYI we've added @Harvey to the list of sponsor team members to tag in private threads if you have questions about the codebase.
+
+{Reactions}
+❤️ 
+
+[01/10/2025 10:26] 0xsolwrecker
+Are test files in scope?
+
+
+[01/10/2025 15:26] rcontre360
+is this the only audit? https://github.com/Zellic/publications/blob/master/Initia%20-%20Zellic%20Audit%20Report.pdf
+
+because I see more reports on that folder
+
+{Embed}
+https://github.com/Zellic/publications/blob/master/Initia%20-%20Zellic%20Audit%20Report.pdf
+publications/Initia - Zellic Audit Report.pdf at master · Zellic/pu...
+Zellic's audits, publications, and reports. Contribute to Zellic/publications development by creating an account on GitHub.
+Code4rena - ARCHIVE-PUBLIC - initia-modules-jan [1325867614081257584].txt_Files/publications-6EBC0
+
+
+[01/10/2025 16:29] ox1nteger
+@0xR360 @0xSolWrecker  let me check with our team sir!
+
+{Reactions}
+👍 
+
+[01/10/2025 16:35] tansawit
+yes that's the only public audit report atm. the others in that repos are from other companies that zellic audited
+
+
+[01/11/2025 17:30] 0xsolwrecker
+Hi, any updates?
+
+
+[01/12/2025 05:18] ox1nteger (pinned)
+sorry for late confirmation.
+yes. test code is in scope and please tell us if you found something weird/buggy with the test case
+
+{Reactions}
+🫡 
+
+[01/13/2025 10:24] lon9j1ng
+Does anyone know how to start the OPinit Bots for testing? Is there a Docker setup available? Can it be set up locally?
+
+{Reactions}
+😫 (2) 
+
+[01/13/2025 10:44] ox1nteger
+@hoon
+
+
+[01/13/2025 11:42] aga7hokakological
+What does `the sequence number of l1 bridge` mean for sequence parameter in MsgFinalizeTokenDeposit?
+
+
+[01/13/2025 12:17] sh_cha
+You can use it by referring to the two readmes below. https://github.com/initia-labs/opinit-bots/blob/v0.1.12/README.md, https://github.com/initia-labs/opinit-bots/blob/v0.1.12/executor/README.md. For docker, please refer to https://github.com/initia-labs/opinit-bots/blob/v0.1.12/Dockerfile and let me know if you have any difficulties.
+There is also an e2e test using interchaintest. https://github.com/initia-labs/opinit-bots/tree/v0.1.12/e2e
+
+
+[01/13/2025 12:19] lon9j1ng
+thanks
+
+{Reactions}
+👍 
+
+[01/13/2025 12:20] sh_cha
+This refers to the sequence number in the l1 chain. It increases by one when MsgInitiateTokenDeposit is executed in the OPHost module. https://github.com/initia-labs/OPinit/blob/v0.6.2/x/ophost/keeper/msg_server.go#L234
+
+{Embed}
+https://github.com/initia-labs/OPinit/blob/v0.6.2/x/ophost/keeper/msg_server.go
+OPinit/x/ophost/keeper/msg_server.go at v0.6.2 · initia-labs/OPinit
+Contribute to initia-labs/OPinit development by creating an account on GitHub.
+
+{Reactions}
+✅ (2) 
+
+[01/14/2025 18:12] 0xsorrynotsorry
+Pinned a message.
+
+
+[01/14/2025 18:17] 0xsolwrecker
+@sorryNotsorry 
+Could you please re-confirm with @bytes032? C4 team says test files aren't in scope but sponsor says it is.
+https://discord.com/channels/810916927919620096/810931711609143326/1327885817103777864
+
+
+[01/14/2025 21:07] 0xozovehe
+Hey @Jay | C4 can the readMe for the contest be updated with the type of ERC20 tokens the protocol integrates with?
+
+
+[01/14/2025 21:53] itsmetechjay
+@bytes032 for visibility
+
+
+[01/15/2025 04:41] bytes032
+There are no ERC20 tokens in Move.
+
+{Reactions}
+hi5 
+
+[01/15/2025 07:16] lon9j1ng
+when run opinitd start executor
+
+{Reactions}
+😫 
+
+[01/15/2025 07:16] lon9j1ng
+```go
+failed to initialize host: failed to initialize base host: failed to initialize node: rpc error: code = NotFound desc = account init1xxxxxxxx not found: key not found.
+```
+
+{Reactions}
+😫 
+
+[01/15/2025 07:17] lon9j1ng
+How should this issue be resolved?
+
+
+[01/15/2025 07:57] ox1nteger
+could you check the account is funded?
+
+
+[01/15/2025 07:57] ox1nteger
+both L1 and rollup chain
+
+
+[01/15/2025 08:19] lon9j1ng
+let me check
+
+
+[01/15/2025 08:22] lon9j1ng
+Do the proposers on L1 and rollup need to have funds?
+
+
+[01/15/2025 08:33] lon9j1ng
+failed to initialize child: failed to initialize base child: failed to get key from keyring: bridge_executor
+➜  opinit-bots git:(640649b) ✗ opinitd keys list initia-1
+
+bridge_executor: init1wx9ye2thlghvr6ljf4pzmf2je97wq0m8cr4dd5
+
+
+[01/15/2025 08:52] lon9j1ng
+➜  minievm git:(main) ✗ minitiad query bank balances init1wx9ye2thlghvr6ljf4pzmf2je97wq0m8cr4dd5
+
+balances:
+- amount: "1000000"
+  denom: umin
+pagination:
+  total: "1"
+
+
+[01/16/2025 03:20] sh_cha
+Is the L2 ChainID `initia-1` correct? If so, check if the keyname set for `bridge_executor` in config.json matches  `bridge_executor` you registered.
+
+
+[01/16/2025 03:23] sh_cha
+The `output_proposer` or `output_submitter` must hold funds to send output proposal txs.
+
+
+[01/16/2025 06:31] lon9j1ng
+i will try
+
+
+[01/16/2025 06:36] lon9j1ng
+My output_submitter holds funds
+
+
+[01/16/2025 06:36] lon9j1ng
+```go
+➜  opinit-bots git:(640649b) ✗ opinitd keys list minitia-1
+
+output_submitter: init1wx9ye2thlghvr6ljf4pzmf2je97wq0m8cr4dd5
+➜  opinit-bots git:(640649b) ✗ opinitd keys list initia-1
+
+bridge_executor: init1wx9ye2thlghvr6ljf4pzmf2je97wq0m8cr4dd5
+```
+
+
+[01/16/2025 06:38] lon9j1ng
+```go
+➜  initia git:(v0.6.3) ✗ minitiad query bank balances init1wx9ye2thlghvr6ljf4pzmf2je97wq0m8cr4dd5 --node tcp://localhost:27657
+
+balances:
+- amount: "1000000"
+  denom: umin
+pagination:
+  total: "1"
+➜  initia git:(v0.6.3) ✗ initiad query bank balances init1wx9ye2thlghvr6ljf4pzmf2je97wq0m8cr4dd5
+balances:
+- amount: "1000000"
+  denom: uinit
+pagination:
+  total: "1"
+```
+
+
+[01/16/2025 06:39] lon9j1ng
+my .opinit/executor.json
+```go
+  "bridge_executor": "bridge_executor",
+  "output_submitter": "output_submitter",
+  "oracle_bridge_executor": "",
+  "disable_output_submitter": false,
+  "disable_batch_submitter": false,
+  "max_chunks": 5000,
+  "max_chunk_size": 300000,
+  "max_submission_time": 3600,
+  "disable_auto_set_l1_height": false,
+  "l1_start_height": 1,
+  "l2_start_height": 1,
+  "batch_start_height": 1,
+  "disable_delete_future_withdrawal": false
+```
+
+
+[01/16/2025 07:39] sh_cha
+The output submitter is the account that sends the output proposal on `L1`. Therefore, it should be added to `initia-1`. Similarly, the bridge_executor exists on `L2`, so it is part of `minitia-1`.
+
+
+[01/16/2025 09:28] lon9j1ng
+ok ill try it.
+
+
+[01/18/2025 03:30] uint256vieet
+@Lon9J1ng @hoon  can you tell me how you set up the L1 and rollup node locally? I'm still stuck with it before running the bot. Is the L1 binary built from repo  initia and is the L2 binary built from minimove.
+
+
+[01/18/2025 07:22] beer__1
+I think you can follow this link and next steps in the docs 
+
+https://initialabs-develop.mintlify.app/nodes-and-rollups/deploying-rollups/rollup-deployment/running-the-rollup
+
+{Embed}
+https://initialabs-develop.mintlify.app/nodes-and-rollups/deploying-rollups/rollup-deployment/running-the-rollup
+Running the Rollups - Initia Docs
+
+{Reactions}
+👍🏻 
+
+[01/21/2025 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺Wardens The **Initia Rollup Modules** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks.
+
+
+[01/22/2025 06:31] saint6704
+How many total findings are there?
+
+
+[01/22/2025 06:31] saint6704
+Can't see the findings repo
+
+
+[01/22/2025 07:05] a_kalout
+102, https://code4rena.com/evaluate/2025-01-initia-rollup-modules
+
+{Embed}
+https://code4rena.com/evaluate/2025-01-initia-rollup-modules
+Evaluate Initia Rollup Modules | Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-PUBLIC - initia-modules-jan [1325867614081257584].txt_Files/c4-og-v2-D7D0C.png
+
+
+[01/22/2025 07:48] _karanel
+some people submitted ai generated qa reports it seems
+
+
+[01/22/2025 08:07] a_kalout
+interesting... 👀
+
+
+[02/07/2025 13:30] a_kalout
+Should we expect the results to be out soon? I know PJQA finished a couple of days ago
+
+{Reactions}
+👍 
+
+[02/10/2025 17:46] thebrittfactor
+🤑 🎉  Awards for **Initia Rollup Modules**:
+
+$24,955.00 USDC » RadiantLabs (@3DOC and @Bernd)
+$12,880.00 USDC » 0xAlix2 (@a_kalout and @ali_shehab)
+$8,050.00 USDC » @OKOMO
+$2,415.00 USDC » @Ruhum
+$1,200.00 USDC » @_karanel
+$800.00 USDC » @0xOzovehe
+
+🏁 Findings summary
+--------------------------------------
+3 High risk findings
+6 Med risk findings
+24 wardens contributed
+
+Top Hunter: RadiantLabs
+Top Gatherer: RadiantLabs
+Top QA report: _karanel 
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+⚠️ Awardees, be sure to [complete your tax reporting info](https://docs.code4rena.com/awarding/incentive-model-and-awards/awarding-process#tax-information-for-code4rena-contributors-wardens-judges-etc) if you haven't already. This must be completed within 30 days (i.e. before Wednesday, 12 March 2025) to receive your award distribution for this audit.
+
+The leaderboard will be updated at a later date with these audit results. 
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+🐸 🔥 (8) 🚀 
+
+[02/13/2025 07:50] gxh6709
+Sorry to interrupt, but why was my report on the same vulnerability downgraded to low while the other person's was considered a solo medium?
+
+{Reactions}
+😅 (3) 
+
+[02/13/2025 07:53] gxh6709
+And my report includes a detailed PoC.
+
+
+[02/13/2025 07:58] lon9j1ng
+This is ridiculous.
+
+{Reactions}
+👍 
+
+[02/19/2025 08:05] _karanel
+It says Awarding for Pump Science and Initia Move, but Report in Progress for this one.
+
+Have the rewards been sent out? If so, I haven't received anything.
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - initia-modules-jan [1325867614081257584].txt_Files/IMG_20250219_133337-A80E4.jpg
+
+
+[02/19/2025 15:41] thebrittfactor
+We have some staff outages that has caused a delay in awards. The first batch should be sent out soon! 
+
+However, C4 staff have already started drafting the report for Initia Modules, which explains the status change that you're seeing in-app.
+
+{Reactions}
+thankyou (3) 
+
+[03/07/2025 00:05] itsmetechjay
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted in 03/14/2025 23:01. Please make sure to grab anything you might need before then.
+
+
+[03/14/2025 20:10] itsmetechjay
+ℹ️ Reminder: this channel will be deleted after 24 hours.
+
+
+==============================================================
+Exported 61 message(s)
+==============================================================
